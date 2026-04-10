@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.imgComputerComponants = new System.Windows.Forms.PictureBox();
             this.btnCPU = new System.Windows.Forms.Button();
             this.btnRAM = new System.Windows.Forms.Button();
             this.btnSSD = new System.Windows.Forms.Button();
@@ -37,82 +36,84 @@
             this.btnOutput = new System.Windows.Forms.Button();
             this.lblDesc = new System.Windows.Forms.Label();
             this.lblInfo = new System.Windows.Forms.Label();
+            this.imgComputerComponants = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imgComputerComponants)).BeginInit();
             this.SuspendLayout();
             // 
-            // imgComputerComponants
-            // 
-            this.imgComputerComponants.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.imgComputerComponants.Location = new System.Drawing.Point(453, 89);
-            this.imgComputerComponants.Name = "imgComputerComponants";
-            this.imgComputerComponants.Size = new System.Drawing.Size(528, 526);
-            this.imgComputerComponants.TabIndex = 0;
-            this.imgComputerComponants.TabStop = false;
-            this.imgComputerComponants.Visible = false;
-            // 
             // btnCPU
             // 
+            this.btnCPU.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCPU.Location = new System.Drawing.Point(44, 47);
             this.btnCPU.Name = "btnCPU";
             this.btnCPU.Size = new System.Drawing.Size(199, 74);
             this.btnCPU.TabIndex = 1;
             this.btnCPU.Text = "CPU";
             this.btnCPU.UseVisualStyleBackColor = true;
+            this.btnCPU.Click += new System.EventHandler(this.btnCPU_Click);
             // 
             // btnRAM
             // 
+            this.btnRAM.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnRAM.Location = new System.Drawing.Point(44, 188);
             this.btnRAM.Name = "btnRAM";
             this.btnRAM.Size = new System.Drawing.Size(199, 74);
             this.btnRAM.TabIndex = 2;
             this.btnRAM.Text = "RAM";
             this.btnRAM.UseVisualStyleBackColor = true;
+            this.btnRAM.Click += new System.EventHandler(this.btnRAM_Click);
             // 
             // btnSSD
             // 
+            this.btnSSD.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSSD.Location = new System.Drawing.Point(44, 335);
             this.btnSSD.Name = "btnSSD";
             this.btnSSD.Size = new System.Drawing.Size(199, 74);
             this.btnSSD.TabIndex = 3;
             this.btnSSD.Text = "SSD";
             this.btnSSD.UseVisualStyleBackColor = true;
+            this.btnSSD.Click += new System.EventHandler(this.btnSSD_Click);
             // 
             // btnPowerS
             // 
+            this.btnPowerS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPowerS.Location = new System.Drawing.Point(44, 479);
             this.btnPowerS.Name = "btnPowerS";
             this.btnPowerS.Size = new System.Drawing.Size(199, 111);
             this.btnPowerS.TabIndex = 4;
             this.btnPowerS.Text = "Power Supply";
             this.btnPowerS.UseVisualStyleBackColor = true;
+            this.btnPowerS.Click += new System.EventHandler(this.btnPowerS_Click);
             // 
             // btnInput
             // 
+            this.btnInput.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnInput.Location = new System.Drawing.Point(44, 661);
             this.btnInput.Name = "btnInput";
-            this.btnInput.Size = new System.Drawing.Size(199, 108);
+            this.btnInput.Size = new System.Drawing.Size(199, 117);
             this.btnInput.TabIndex = 5;
             this.btnInput.Text = "Input Peripheral";
             this.btnInput.UseVisualStyleBackColor = true;
+            this.btnInput.Click += new System.EventHandler(this.btnInput_Click);
             // 
             // btnOutput
             // 
+            this.btnOutput.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOutput.Location = new System.Drawing.Point(44, 827);
             this.btnOutput.Name = "btnOutput";
-            this.btnOutput.Size = new System.Drawing.Size(199, 110);
+            this.btnOutput.Size = new System.Drawing.Size(199, 115);
             this.btnOutput.TabIndex = 6;
             this.btnOutput.Text = "Output Peripheral";
             this.btnOutput.UseVisualStyleBackColor = true;
+            this.btnOutput.Click += new System.EventHandler(this.btnOutput_Click);
             // 
             // lblDesc
             // 
             this.lblDesc.AutoSize = true;
-            this.lblDesc.Location = new System.Drawing.Point(315, 639);
+            this.lblDesc.Location = new System.Drawing.Point(569, 661);
             this.lblDesc.Name = "lblDesc";
             this.lblDesc.Size = new System.Drawing.Size(298, 50);
             this.lblDesc.TabIndex = 7;
             this.lblDesc.Text = "Nothing Selected";
-            this.lblDesc.Visible = false;
             // 
             // lblInfo
             // 
@@ -122,6 +123,18 @@
             this.lblInfo.Size = new System.Drawing.Size(628, 50);
             this.lblInfo.TabIndex = 8;
             this.lblInfo.Text = "Please select something to learn more";
+            // 
+            // imgComputerComponants
+            // 
+            this.imgComputerComponants.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.imgComputerComponants.Image = global::Topic_10_Assignment.Properties.Resources.CPU;
+            this.imgComputerComponants.Location = new System.Drawing.Point(453, 89);
+            this.imgComputerComponants.Name = "imgComputerComponants";
+            this.imgComputerComponants.Size = new System.Drawing.Size(528, 526);
+            this.imgComputerComponants.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgComputerComponants.TabIndex = 0;
+            this.imgComputerComponants.TabStop = false;
+            this.imgComputerComponants.Visible = false;
             // 
             // FormAssignment10
             // 
