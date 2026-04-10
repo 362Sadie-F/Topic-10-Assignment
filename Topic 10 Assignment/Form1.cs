@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Topic_10_Assignment
 {
-    public partial class Form1 : Form
+    public partial class FormAssignment10 : Form
     {
-        public Form1()
+        public FormAssignment10()
         {
             InitializeComponent();
         }
