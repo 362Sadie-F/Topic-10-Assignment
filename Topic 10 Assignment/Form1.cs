@@ -50,13 +50,13 @@ namespace Topic_10_Assignment
         private void btnInput_Click(object sender, EventArgs e)
         {
             generator.Next(3);
-            if (generator.Next() == 1)
+            if (generator.Next(3) == 1)
             {
                 imgComputerComponants.Visible = true;
                 imgComputerComponants.Image = Properties.Resources.Mouse;
                 lblDesc.Text = "An Input Peripheral can be ";
             }
-            else if (generator.Next() == 2)
+            else if (generator.Next(3) == 2)
             {
                 imgComputerComponants.Visible = true;
                 imgComputerComponants.Image = Properties.Resources.KeyB;
@@ -68,13 +68,13 @@ namespace Topic_10_Assignment
         private void btnOutput_Click(object sender, EventArgs e)
         {
             generator.Next(3);
-            if (generator.Next() == 1)
+            if (generator.Next(3) == 1)
             {
                 imgComputerComponants.Visible = true;
                 imgComputerComponants.Image = Properties.Resources.Speakers;
                 lblDesc.Text = "An Output Peripheral can be ";
             }
-            else if (generator.Next() == 2)
+            else if (generator.Next(3) == 2)
             {
                 imgComputerComponants.Visible = true;
                 imgComputerComponants.Image = Properties.Resources.Screen;
